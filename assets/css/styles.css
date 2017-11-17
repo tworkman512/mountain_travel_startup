@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 16px sans-serif;
+  /*font-family: Helvetica;*/
+  color: #555;
+  background: url('../img/main.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #80a3db;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  padding: 0 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.75;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+/* Header */
+header {
+  /*position: absolute;*/
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+.greeting h1 {
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.greeting h3 {
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 46px;
+  color: #fff;
+  background-color: #66CCCC;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #70DBDB;
+}
+
+/* Main Content */
