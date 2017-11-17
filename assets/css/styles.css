@@ -11,14 +11,19 @@ html {
 	color: #555;
 }
 
+header {
+    z-index: 2;
+}
+
 nav {
 	list-style: none;
 }
 
 a {
 	text-decoration: none;
-	opacity: 0.75;
 	color: #fff;
+  opacity: 0.75;
+  transition: opacity 0.3s;
 }
 
 a:hover {
@@ -31,11 +36,11 @@ a.btn {
 	font-weight: bold;
 	text-align: center;
 	background-color: #66CCCC;
-  transition: background-color 0.3s;;
+  transition: background-color 0.3s;
 	opacity: 1;
 }
 
-a.btn:hover {
+.btn:hover {
   cursor: pointer;
   background-color: #70DBDB;
 }
