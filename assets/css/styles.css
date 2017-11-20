@@ -85,7 +85,36 @@ header nav li {
 	margin: 0 15px;
 }
 
+@media (max-width: 800px) {
+	header {
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+
+	header h2 {
+		margin-bottom: 15px;
+	}
+}
+
 /* Hero Styles */
+
+@media (max-width: 800px) {
+	.hero {
+		min-height: 600px;
+	}
+
+	.hero h1 {
+		font-size: 48px;
+	}
+
+	.hero h3 {
+		font-size: 24px;
+	}
+
+	.hero a.btn {
+		padding: 15px 40px;
+	}
+}
 
 .hero {
 	position: relative;
@@ -135,11 +164,10 @@ header nav li {
 
 /* Destination Styles */
 
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 125px 100px;
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
+	}
 }
 
 section:not(.hero):nth-child(even) {
@@ -198,11 +226,21 @@ ul.grid {
 	background-color: #333;
 }
 
-/* Tour Packages */
+@media (max-width: 1100px) {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
+		flex-basis: 50%;
+	}
+}
 
-/*.tour-packages {
-	background-color: #f7f7f7;
-}*/
+@media (max-width: 800px) {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
+		flex-basis: 100%;
+	}
+}
+
+/* Tour Packages */
 
 .tour-packages .grid li {
 	padding: 50px;
@@ -217,6 +255,13 @@ ul.grid {
 .tour-packages .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+	.tour-packages .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
 }
 
 /* Testimonials */
@@ -238,6 +283,17 @@ ul.grid {
 .testimonials .author {
 	font-size: 18px;
 	margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+	.testimonials .quote {
+		font-size: 18px;
+		margin: 15px 0;
+	}
+
+	.testimonials .author {
+		font-size:  14px;
+	}
 }
 
 /* Contact */
@@ -267,6 +323,13 @@ ul.grid {
 	padding: 18px 42px;
 }
 
+@media (max-width: 1000px) {
+	.contact form input {
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+}
+
 /* Footer */
 
 footer {
@@ -293,4 +356,20 @@ footer p {
 	opacity: 0.6;
 	color: #fefefe;
 	align-self: center;
+}
+
+@media (max-width: 1100px) {
+	footer {
+		flex-direction: column;
+	}
+
+	footer p {
+		text-align: center;
+		margin: 15px 0;
+	}
+
+	footer ul li {
+		margin: 0 8px;
+	}
+
 }
