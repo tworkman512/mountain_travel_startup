@@ -231,7 +231,7 @@ ul.grid {
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.5;
-	margin-bottom: 20px;
+	margin: 40px 0 25px;
 	padding: 0;
 }
 
@@ -252,7 +252,7 @@ ul.grid {
 	justify-content: center;
 	flex-wrap: wrap;
 	max-width: 800px;
-	width: 80%;
+	width: 60%;
 }
 
 .contact form input {
@@ -271,36 +271,26 @@ ul.grid {
 
 footer {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	text-align: center;
+	justify-content: space-around;
 	color: #fff;
-	background-color: #414a4f;
-	padding: 60px 0;
+	background-color: #607d8b;
+	padding: 20px 0;
 }
 
 footer ul {
 	display: flex;
-	margin-bottom: 25px;
-	font-size: 32px;
 	list-style: none;
 }
 
-footer ul li:first-child {
-	margin-left: 0;
-}
-
 footer ul li {
-	margin: 0 8px;
-}
-
-footer ul li:last-child {
-	margin-right: 0;
+	margin-left: 16px;
 }
 
 footer p {
 	text-transform: uppercase;
 	font-size: 14px;
+	opacity: 0.6;
 	color: #fefefe;
-	margin-bottom: 10px;
+	align-self: center;
 }
