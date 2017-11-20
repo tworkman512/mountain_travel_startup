@@ -85,7 +85,7 @@ header nav li {
 	margin: 0 15px;
 }
 
-/*Hero Styles*/
+/* Hero Styles */
 
 .hero {
 	position: relative;
@@ -131,4 +131,176 @@ header nav li {
 		opacity: 1;
 		margin: 0;
 	}
+}
+
+/* Destination Styles */
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 125px 100px;
+}
+
+section:not(.hero):nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+h3.title {
+	color: #41414f;
+	text-transform: capitalize;
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p {
+	max-width: 775px;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+hr {
+	width: 250px;
+	height: 3px;
+	background-color: #2196f3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+/* Destination Images */
+
+ul.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.destinations .grid li.small {
+	flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+	flex-basis: 70%;
+}
+
+.destinations .grid li {
+	padding: 20px;
+	height: 350px;
+	border-radius: 3px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+/* Tour Packages */
+
+/*.tour-packages {
+	background-color: #f7f7f7;
+}*/
+
+.tour-packages .grid li {
+	padding: 50px;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.tour-packages .grid li i {
+	color: #8c9eff;
+}
+
+.tour-packages .grid li h4 {
+	font-size: 30px;
+	margin: 25px 0;
+}
+
+/* Testimonials */
+
+.testimonials {
+	background-color: #fff;
+}
+
+.testimonials .quote {
+	text-align: center;
+	width: 80%;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.testimonials .author {
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+/* Contact */
+
+.contact {
+	background-color: #f7f7f7;
+}
+
+.contact form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input {
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+.contact form .btn {
+	padding: 18px 42px;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #414a4f;
+	padding: 60px 0;
+}
+
+footer ul {
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+	list-style: none;
+}
+
+footer ul li:first-child {
+	margin-left: 0;
+}
+
+footer ul li {
+	margin: 0 8px;
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #fefefe;
+	margin-bottom: 10px;
 }
