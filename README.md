@@ -3,5 +3,4 @@ A fictitious responsive startup site for mountain travel. I used flexbox and CSS
 
 ---
 
-![Image of homepage]
-(https://github.com/tworkman512/mountain_travel_startup/tree/master/assets/img/demo.png)
+![Image of homepage](https://github.com/tworkman512/mountain_travel_startup/blob/master/assets/img/demo.png)
